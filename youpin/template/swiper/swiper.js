@@ -1,0 +1,9 @@
+module.exports={
+  _clickSwiperItem:function(e){
+    if(this.clickSwiperItem){
+      this.clickSwiperItem(e);
+    }else{
+      console.warn("当前页面没有：_clickSwiperItem");
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<template name="channel">
+  <view class="channel" >
+    <view class="section__ctn" wx:for="{{channel}}" wx:for-item="item" wx:key="{{index}}" bindtap='_clickChannelItem' data-index="{{index}}">
+      <view class="image-title">
+        <image class="section__image"  src="{{host+item.image}}"></image>
+        <view class="section__title">
+          <text>{{item.title}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

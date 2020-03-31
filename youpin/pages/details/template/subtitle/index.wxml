@@ -1,0 +1,8 @@
+<template name="subtitle">
+  <view class="container box">
+    <view class="subtitle">
+      <view class="zan-tag zan-tag--warn zan-tag--plain">卖点</view>
+      <text style='margin-left:5px;'>{{subtitle}}</text>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,5 @@
+<view style='width:100%'>
+  <view style="margin:50rpx;margin-top:400rpx;">
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfoFun">点击登录</button>
+  </view>
+</view>

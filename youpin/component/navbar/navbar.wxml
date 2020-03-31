@@ -1,0 +1,19 @@
+<view class="page" style='font-size: 32rpx;'>
+  <view class="page__bd">
+    <view class="weui-tab">
+      <view class="weui-navbar nav-bg-color">
+        <block wx:for="{{tabs}}" wx:key="*this">
+          <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}"  style="padding:8rpx 0;color:{{activeIndex == index ? color : ''}}" bindtap="tabClick">
+            <view class="weui-navbar__title">{{item}}</view>
+          </view>
+        </block>
+        <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);background-color:{{color}};height:4rpx;width:{{slidewidth}}px;"></view>
+      </view>
+      <view class="weui-tab__panel" style='padding-top:64rpx;'>
+        <view class="" wx:for="{{tabs}}" wx:key="*this" wx:if="{{activeIndex == index}}">
+          <slot name="{{index}}"></slot>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,9 @@
+module.exports={
+  _clickLumpItem:function(e){
+    if(this.clickLumpItem){
+      this.clickLumpItem(e);
+    }else{
+      console.warn('当前页面没有：clickLumpItem');
+    }
+  }
+}

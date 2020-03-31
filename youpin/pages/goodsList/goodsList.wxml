@@ -1,0 +1,16 @@
+<import src="/template/goodsBox/index.wxml" />
+<import src="/template/toTop/toTop.wxml" />
+<view class='page' style='background-color:#fff'>
+  <scroll-view scroll-y scroll-with-animation bindscroll="scrollEvent" bindscrolltolower="scrollToBottomEvent" style="height:{{ui.pageHeight}}px;" scroll-top='{{ui.scrollPosition}} lower-threshold=100'>
+    <view style='width:100%;' wx:if='{{ui.bgImage}}'>
+      <image src='{{ui.bgImage}}' mode='widthFix' style='width:100%' />
+    </view>
+    <view class='sort-bar'>
+      <view class='sort-item {{currentSortItem==index?"sort-item-active":""}}' wx:for='{{sortData}}' wx:key='{{index}}' data-sort-id='{{item.sortType}}' data-index='{{index}}' bindtap='clickSortItem'>
+        <text>{{item.title}}</text>
+      </view>
+    </view>
+    <template is="goodsBox" data="{{type:0,bgcolor:'#fff',pageList:goodsList,pvid:''}}" />
+  </scroll-view>
+  <template is='toTop' data="{{isHidden:ui.toTopBtnIsHidden}}" />
+</view>

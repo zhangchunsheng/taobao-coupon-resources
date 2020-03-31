@@ -1,0 +1,5 @@
+<view style='width:100%;height:100%;background-color:#2d3132;position:fixed;'>
+  <view style='width:80%;margin:200rpx auto;'>
+    <image src="{{host+contact.image}}" mode='widthFix' style='width:100%'/>
+  </view>
+</view>

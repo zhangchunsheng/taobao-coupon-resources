@@ -1,0 +1,20 @@
+<template name='orderItem'>
+  <view class='list-item' wx:for='{{orders}}' wx:key='{{index}}'>
+    <view class='' style='flex:8'>
+      <view class='list-title'>
+        <text>{{item.orderId}}</text>
+      </view>
+      <view class='list-date'>
+        <text>{{item.addTime}}</text>
+      </view>
+    </view>
+    <view class='' style='flex:2;align-self:center;'>
+      <view class='list-point order-status{{item.payStatus}}-color'>
+        <text>{{item.statusText}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="zan-loadmore zan-loadmore--nodata" style='margin-top:40rpx;' wx:if='{{orders.length==0}}'>
+      <view class="zan-loadmore__tips" style='background:#fff'>暂无数据</view>
+    </view>
+</template>

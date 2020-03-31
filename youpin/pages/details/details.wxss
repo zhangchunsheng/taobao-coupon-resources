@@ -1,0 +1,10 @@
+/* pages/details/details.wxss */
+@import "/dist/capsule/index.wxss";
+@import "/pages/details/template/mainImage/index.wxss";
+@import "/pages/details/template/bottomBar/index.wxss";
+@import "/pages/details/template/coupon/index.wxss";
+@import "/pages/details/template/detailImage/index.wxss";
+@import "/pages/details/template/goodsInfo/index.wxss";
+@import "/pages/details/template/shopInfo/index.wxss";
+@import "/pages/details/template/subtitle/index.wxss";
+

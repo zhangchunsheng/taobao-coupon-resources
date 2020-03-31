@@ -1,0 +1,11 @@
+<template name="swiper">
+  <view class="swiper">
+    <swiper indicator-dots="true" indicator-active-color="#d4237a" autoplay="true" style="height:320rpx">
+      <block wx:for="{{swiper}}" wx:key="{{index}}">
+        <swiper-item bindtap='_clickSwiperItem' data-index="{{index}}">
+          <image src="{{host+item.image}}" style="width: 100%;height:100%" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</template>

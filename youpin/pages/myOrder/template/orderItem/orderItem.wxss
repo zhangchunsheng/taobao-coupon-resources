@@ -1,0 +1,37 @@
+.list-item {
+  height: 100%;
+  border-bottom: 1rpx solid #ccc;
+  padding: 10rpx 30rpx;
+  display: flex;
+}
+
+.list-title {
+  font-size: 28rpx;
+}
+
+.list-date {
+  font-size: 20rpx;
+  color: #676767;
+}
+
+.list-point {
+  color: #5cb8bc;
+  text-align: right;
+  font-size: 30rpx;
+}
+
+.order-status1-color {
+  color: #f0ac49;
+}
+
+.order-status2-color {
+  color: #1296db;
+}
+
+.order-status3-color {
+  color: #d81e06;
+}
+
+.order-status4-color {
+  color: #6cb82e;
+}

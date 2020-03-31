@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/charts/charts",
+    "pages/choice/choice",
+    "pages/my/my",
+    "pages/details/details",
+    "pages/subcategory/subcategory",
+    "pages/goodsList/goodsList",
+    "pages/searchPage/searchPage",
+    "pages/help/help",
+    "pages/contact/contact",
+    "pages/integralHelp/integralHelp",
+    "pages/integralLog/integralLog",
+    "pages/myOrder/myOrder",
+    "pages/submitOrder/submitOrder",
+    "pages/myFav/myFav",
+    "pages/confirmOrder/confirmOrder",
+    "pages/authorize/authorize"
+  ],
+  "window": {
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff93a5",
+    "navigationBarTitleText": "IGF优惠券",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#2c2c2c",
+    "selectedColor": "#ff93a5",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/s_index.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "images/search.png",
+        "selectedIconPath": "images/s_search.png"
+      },
+      {
+        "pagePath": "pages/charts/charts",
+        "text": "排行榜",
+        "iconPath": "images/charts.png",
+        "selectedIconPath": "images/s_charts.png"
+      },
+      {
+        "pagePath": "pages/choice/choice",
+        "text": "抢购",
+        "iconPath": "images/choice.png",
+        "selectedIconPath": "images/s_choice.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/s_my.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

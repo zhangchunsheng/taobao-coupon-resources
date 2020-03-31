@@ -1,0 +1,19 @@
+<template name="topbar">
+  <view class="xianshi-nav">
+    <view class="event-tabs-scroller">
+      <view class="topbar-box" data-id='{{topbarData[0].id}}'>
+        <block wx:for="{{topbarData}}" wx:key="index">
+          <view class="topbar-item {{selectId==index?'active':''}}" bindtap="_clickTopBarItem" data-id='{{item.id}}' data-index='{{index}}'>
+            <view class="big-text" style='font-size:34rpx;font-weight: bold;'>
+              <text>{{item.time}}</text>
+            </view>
+            <view style='font-weight:normal;font-size: 20rpx;'>
+              <text>{{item.text}}</text>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+
+</template>

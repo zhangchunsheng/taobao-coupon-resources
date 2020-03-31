@@ -1,0 +1,22 @@
+<view style='margin-top:10rpx;'>
+  <view style='margin:0 30rpx;'>
+    <view style='display:flex;'>
+      <view class='input-box'>
+        <view style='padding:0rpx;display: flex;'>
+          <view class='input-ico'>
+            <image src='/images/order.png' mode='widthFix' style='width:40rpx;margin-top:12rpx;' />
+          </view>
+          <view class='input'>
+            <input placeholder='请粘贴淘宝订单号' type='number' bindinput='inputOrder'></input>
+          </view>
+        </view>
+      </view>
+      <view class='submit-btn' bindtap='submitOrder'>
+        <text>提交订单</text>
+      </view>
+    </view>
+  </view>
+  <view style='margin-top:30rpx;'>
+    <image src='/images/submitOrder.jpg' mode='widthFix' style='width:100%' />
+  </view>
+</view>

@@ -1,0 +1,13 @@
+.body{
+  background-color: #fff;
+  margin: 0 40rpx;
+  font-size:26rpx;
+  color: #72777a;
+}
+.body-title{
+  font-weight:bold;
+  font-size:28rpx;
+}
+.body-text{
+  font-size:26rpx;
+}

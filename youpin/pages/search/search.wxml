@@ -1,0 +1,12 @@
+<import src="/template/search/search.wxml" />
+<import src="/template/grid/index.wxml" />
+<view class="page" style="background-color:#fff;">
+  <view bindtap='clickSearchBar'>
+    <template is="search" data="{{color:'#fff'}}" />
+  </view>
+  
+  <view class="head-title">
+    <text>当季流行分类展示</text>
+  </view>
+  <template style="background-color:#fff;" is="grid" data="{{gridData:category}}" />
+</view>

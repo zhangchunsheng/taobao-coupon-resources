@@ -1,0 +1,9 @@
+module.exports={
+  _clickGridItem:function(e){
+    if(this.clickGridItem){
+      this.clickGridItem(e);
+    }else{
+      console.warn("当前页面没有clickGridItem方法")
+    }
+  }
+}

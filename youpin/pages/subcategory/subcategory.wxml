@@ -1,0 +1,4 @@
+<import src="/template/grid/index.wxml" />
+<view class="page" style="background-color:#fff;">
+  <template is="grid" data="{{gridData:category.children}}"/>
+</view>

@@ -1,0 +1,7 @@
+@import "/template/search/search.wxss";
+@import "/template/grid/index.wxss";
+.head-title{
+  font-size:30rpx;
+  text-align:center;
+  padding:10rpx;
+}

@@ -1,0 +1,36 @@
+<import src="/template/goodsBox/index.wxml" />
+<view class="page" style=''><!-- 
+  <view class="lh">
+    <view class="listhead">
+      <view style='flex:1;'>
+        <text style='{{selectId==0?"color:#f31a4f;":""}}'>{{timeData.tagTitle}}</text>
+      </view>
+      <view style='display:flex;flex:1;justify-content:flex-end;'>
+        <view class='padding' style='margin-right:10rpx;'>
+          <text>{{timeData.timeTitle}}</text>
+        </view>
+        <view style='display:flex;height:32rpx;margin:auto 0; line-height: 32rpx;'>
+          <view style='' class='time-box'>
+            <text>{{timeData.h}}</text>
+          </view>
+          <view style='' class='padding'>
+            <text>:</text>
+          </view>
+          <view style='' class='time-box'>
+            <text>{{timeData.m}}</text>
+          </view>
+          <view style='' class='padding'>
+            <text>:</text>
+          </view>
+          <view style='' class='time-box'>
+            <text>{{timeData.s}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view> -->
+  <view style='padding-left:20rpx;padding-right:20rpx;background-color:#fff;'>
+    <template is="goodsBox" data="{{type:3,bgcolor:'#fff',pageList:goodsList,pvid:goods.info.pvid,enabled:true}}" />
+  </view>
+
+</view>

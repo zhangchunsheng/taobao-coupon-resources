@@ -1,0 +1,40 @@
+<!--{{couponPrice:,}}-->
+<template name="coupon">
+  <view class="box" style='padding-bottom:10px;'>
+    <!--可用-->
+    <view class="coupon" bindtap="_clickCoupon" id="coupon">
+      <view class="coupon-left">
+        <view class="coupon-inner">
+          <view class="coupon-money">
+            <text style='font-size:50rpx;color:rgba(255, 255, 255, .8)'>¥</text>
+            <text class="sum" style='margin-left:10rpx;'>{{couponPrice}}</text>
+            <text style='margin-left:10rpx;color:rgba(255, 255, 255, .8)'>优惠券</text>
+          </view>
+          <icon class="circle" style='top:10rpx;left: -10rpx;'></icon>
+          <icon class="circle" style='top:40rpx;left: -10rpx;'></icon>
+          <icon class="circle" style='top:70rpx;left: -10rpx;'></icon>
+          <icon class="circle" style='top:100rpx;left: -10rpx;'></icon>
+          <icon class="circle" style='top:130rpx;left: -10rpx;'></icon>
+          <icon class="circle" style='top:160rpx;left: -10rpx;'></icon>
+        </view>
+
+      </view>
+      <view class="coupon-right">
+        <view class="coupon-inner">
+          <view class="coupon-time" style='font-size:40rpx;'>
+            立即领券
+          </view>
+          <view class="coupon-circle top"></view>
+          <view class="coupon-circle bottom"></view>
+          <icon class="circle" style='top:10rpx;right: -10rpx;'></icon>
+          <icon class="circle" style='top:40rpx;right: -10rpx;'></icon>
+          <icon class="circle" style='top:70rpx;right: -10rpx;'></icon>
+          <icon class="circle" style='top:100rpx;right: -10rpx;'></icon>
+          <icon class="circle" style='top:130rpx;right: -10rpx;'></icon>
+          <icon class="circle" style='top:160rpx;right: -10rpx;'></icon>
+        </view>
+      </view>
+      <view class="coupon-light"></view>
+    </view>
+  </view>
+</template>

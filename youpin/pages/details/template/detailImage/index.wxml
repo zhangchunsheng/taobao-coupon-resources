@@ -1,0 +1,28 @@
+<!--{{descImages:,groupProps:}}-->
+<template name="detailImage">
+  <view class="container box">
+    <view class="tab">
+      <view class="tab-item {{currentTabIndex==0?'tab-item-active':''}}" data-tab-index="0" bindtap="_tabChange">
+        图文详情
+      </view>
+      <view class="tab-item {{currentTabIndex==1?'tab-item-active':''}}" data-tab-index="1" bindtap="_tabChange">
+        产品参数
+      </view>
+    </view>
+    <view hidden="{{currentTabIndex!=0}}" style='margin-top:10rpx;'>
+      <image style="width:100%;" mode="widthFix" wx:for="{{descImages}}" wx:key="{{index}}" src="{{item}}"></image>
+    </view>
+    <view hidden="{{currentTabIndex!=1}}">
+      <view wx:for="{{groupProps}}" wx:key="{{index}}" style="margin-top:10rpx;">
+        <view class="props-box">
+          <view class="props-left">
+            {{item.key}}
+          </view>
+          <view class="props-right zan-ellipsis">
+            {{item.value}}
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

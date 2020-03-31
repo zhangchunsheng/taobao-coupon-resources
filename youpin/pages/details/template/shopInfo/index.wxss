@@ -1,0 +1,38 @@
+.shop-name {
+  margin-left: 10rpx;
+  color: #000;
+  font-size: 32rpx;
+}
+
+.shop-box {
+  width: 100%;
+  background: #fff;
+}
+
+.shop-box-left {
+  float: left;
+  width: 140rpx;
+  height: 140rpx;
+}
+
+.shop-score {
+  margin-left: 4rpx;
+  margin-right: 10rpx;
+}
+
+.shop-box-right {
+  float: left;
+  margin-left: 20rpx;
+  height: 140rpx;
+}
+
+.shop-text {
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 28rpx;
+}
+
+.shopIcon {
+  width: 100%;
+  height: 100%;
+}

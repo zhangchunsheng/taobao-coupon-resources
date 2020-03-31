@@ -1,0 +1,16 @@
+@import "/template/channel/channel.wxss";
+@import "/template/search/search.wxss";
+@import "/template/swiper/swiper.wxss";
+@import "/template/lumpshow/lumpshow.wxss";
+@import '/template/goodsBox/index.wxss';
+
+.head-title {
+  display: block;
+  font-size: 28rpx;
+  color: #999;
+  font-family: '微软雅黑';
+  font-weight: bold;
+  padding: 10rpx 0;
+  text-align: center;
+  
+}

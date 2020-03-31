@@ -1,0 +1,22 @@
+<!--{{shopIcon:,shopType:,shopName:,evaluates:}}-->
+<template name="shopInfo">
+  <view class="container box">
+    <view class="shop-box">
+      <view class="shop-box-left">
+        <image src="{{shopIcon}}" class="shopIcon" />
+      </view>
+      <view class="shop-box-right">
+        <view class="shop-text">
+          <image src="/images/{{shopType=='C'?'tb-mini':'tm-mini'}}.png" style='position:relative;top:10rpx;maring-top:20rpx;width:40rpx;height:40rpx;' />
+          <text class="shop-name">{{shopName}}</text>
+        </view>
+        <view class="shop-text">
+          <block wx:for="{{evaluates}}" wx:key="{{index}}">
+            <text style='color:#999'>{{item.title}}</text>
+            <text class="shop-score" style='color:{{item.levelTextColor}}'>{{item.score}}</text>
+          </block>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

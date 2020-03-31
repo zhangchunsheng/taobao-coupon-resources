@@ -1,0 +1,47 @@
+/**app.wxss**/
+@import 'style/weui.wxss';
+@import 'style/font.wxss';
+@import 'style/zanui.wxss';
+.page{
+  background: #eeeeee;
+  font-size: 28rpx;
+  color: #676767;
+}
+.container {
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-top: 10rpx;
+}
+
+.main-color {
+  background-color: #ff93a5;
+}
+
+.box-ptop {
+  padding-top: 10rpx;
+}
+.box {
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  background-color: #fff;
+}
+.btn{
+  width: 100%;
+  height: 29px;
+  line-height: 29px;
+  text-align: center;
+  padding:0 10rpx;
+  background-color: #ff93a5;
+  border-radius: 50rpx;
+  color: #fff;
+}
+.point {
+  margin-right: 5rpx;
+  height: 50rpx;
+  width: 50rpx;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAADzklEQVRYR+1Xy3HbSBTsB1dRvq02grUjsDJYQgmYjmDpg0HeTEewUgSSbgR0WDoDKgGDimCpCExnIN8kVgm91dAMa8QVCPBX5YPmohIxGPS897pfP8MvvuwXx4cXgNtm6CWCLxFcFYF+3m8/8IHLey6PL6+3jZx/f60aTPKkY7D3ANoA3tSAmAGYgBinx+nVpoAbAUzy5ATAZ4Md+g+R/Algqv/N7FZ/SfrnR2b222IvqOeDLM6+rgu0FmDyLZmY2Z8OwHVk0UiRGcZDRahy9fO+ItwuWHQX74PjLM4+rANyJUBFzmB/k/wRWdQdxsPJOof7varVgsXIzP4geJrFmTLSaK0E2PvWm8LwzmBv6yJW9zWBJJiTvM6OM9Vwo7UaYN4rGUrwQxZn40YnVmxK8mRgsLO9AHQgT+aYX4ziUUmIpqubdw9baIlgZVr3BtCBvDXYmOCE4M1lfFmyeHl9yj8dGUylobRKmkL27z7FqsEChQjzV9PIhfsIfo0QnRD8vpcIpnFa1qrS9RqvOwSPSB4BeKJ3LoWlPprZ1GDTO9yNfVn08h73CnCT6IXvSLYiRLNhPJSWNlqNWOwj2OhEt0ltESglqpQUgoeGx44DYKY6nmN+VUe6RgDvcf973UEevNO7fxr0aoEW4PMszk6rLt8IIIBRGqcf6yIo9kaI/nW1+AOGUYSo7D7qQq79qQW+EbsByHhoXaRxOnju/KYAdVtJim5b2fCTPBk5pld+MAQRXqiqjBoBFPN8w3f1pK4iwDOSpWmQB/TGQpeJEH1Z1bulCAc4OJM46P2tAOrlft7vLqXlSUYIfgHRCS+iC8j5EI+XcEui3TaYZGqxtgYYHla6ExT6gJgpTTykcWC0cwfwSjop97KqbiXgXvx3CrDqoz7FBouVXtfyRIpFtKSDiqxPv8R7JymuY7CeBzXY2P1sB3BNPxi47xmIwapZRJJToDgzmORmY5KcaxYRKwl+rHIvPrrheODYLvfzyPZHopQ160T8ydC1UQ2WUsCDiVy1lxejje7t/vq5zhIAvADR9u89Vx4ausxMPfnzxhFcREZTHTEIJzUnIWXBKzoysy22xmKxJ4lzPyVBChRtT5AHPNz6bGxVg+HNA6vVIdleAqtOc+rS936dEWFnAJfTFEZHz+5wN22h1S3nDjcHr3Irrs2pk7RB3KTH6RPh9t+rnYubyEu4J+jH/mc/qqocSmLI8PoxQCMtjZ0qAu4coAA4yyV34t3K/+9J3NA4nmN+vsrK7QVgiEapfIVXi6HJl0NTf7l3gOuWyPL+F4DbRvA/1AInR2MHw6oAAAAASUVORK5CYII=)no-repeat 50% 50%;
+  background-size: 50rpx 50rpx;
+  margin-bottom: 12rpx;
+}

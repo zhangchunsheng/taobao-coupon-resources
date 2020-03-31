@@ -1,0 +1,17 @@
+.toTop {
+  display: block;
+  position: fixed;
+  right: 60rpx;
+  bottom: 130rpx;
+  
+  width: 80rpx;
+  height: 80rpx;
+  background-color: rgba(0,0,0,0.6);
+  
+  border-radius: 50%;
+  text-align: center;
+  z-index: 11;
+  line-height: 80rpx;
+  color: #fff;
+  
+}

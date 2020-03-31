@@ -1,0 +1,28 @@
+.input-box{
+  width: 100%;
+  flex:7;
+  border:3rpx #fa4c66 solid;
+  border-top-left-radius: 40rpx;
+  border-bottom-left-radius: 40rpx;
+}
+.input-ico{
+  flex: 1.5;
+  text-align: center;
+  align-self:center;
+}
+.input{
+  flex: 8.5;
+  align-self:center;
+  font-size:30rpx;
+}
+.submit-btn{
+  color:#fff;
+  background-color: #fa4c66;
+  flex:3;
+  text-align: center;
+  font-size: 32rpx;
+  border-top-right-radius: 40rpx;
+  border-bottom-right-radius:40rpx;
+  height: 72rpx;
+  line-height: 72rpx;
+}

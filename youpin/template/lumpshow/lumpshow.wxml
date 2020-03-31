@@ -1,0 +1,60 @@
+<template name="lumpshow">
+  <view class="container">
+    <view style="box-sizing: border-box;line-height: 0;width: 100%;height:400rpx;background-color: rgb(255, 255, 255);background-position: initial initial;background-repeat: initial initial;">
+      <!--左-->
+      <view style="float:left;box-sizing: border-box; line-height: 0; width: 40%; height:100%;position:relative" bindtap='_clickLumpItem' data-index='{{0}}'>
+        <view style='display:flex;height:32rpx;margin:auto 0; line-height: 32rpx;position:absolute;top:110rpx;left:20rpx;'>
+          <view style='' class='time-box'>
+            <text>{{timeData.h}}</text>
+          </view>
+          <view style='' class='padding'>
+            <text>:</text>
+          </view>
+          <view style='' class='time-box'>
+            <text>{{timeData.m}}</text>
+          </view>
+          <view style='' class='padding'>
+            <text>:</text>
+          </view>
+          <view style='' class='time-box'>
+            <text>{{timeData.s}}</text>
+          </view>
+        </view>
+        <image src="{{host+programme[0].image}}" style=" width: 100%; height:100%;z-index: -1;" />
+
+      </view>
+      <!--横分隔线-->
+      <view style="float:left;box-sizing: border-box; line-height: 0; background-color: rgb(232, 232, 232); width: 2rpx; height: 100%;" />
+      <!--右-->
+      <view style="float:left;box-sizing: border-box; line-height: 0; width: 59%; height:100%;">
+        <!--上-->
+        <view style="box-sizing: border-box; line-height: 0; width: 100%; height:50%;" bindtap='_clickLumpItem' data-index='{{1}}'>
+          <!--左-->
+          <view style="float:left;box-sizing: border-box; line-height: 0; width: 50%; height:100%;">
+            <image src="{{host+programme[1].image}}" style=" width: 100%; height:100%;" />
+          </view>
+          <!--右-->
+          <view style="float:left;box-sizing: border-box; line-height: 0; width: 50%; height:100%;">
+            <image src="{{host+programme[1].image1}}" style=" width: 100%; height:100%;" />
+          </view>
+        </view>
+        <!--竖分隔线-->
+        <view style="box-sizing: border-box; line-height: 0; background-color: rgb(232, 232, 232); width: 100%; height: 2rpx;" />
+        <!--下-->
+        <view style="box-sizing: border-box; line-height: 0; width: 100%; height:49%;">
+          <!--左-->
+          <view style="float:left;box-sizing: border-box; line-height: 0; width: 50%; height:100%;" bindtap='_clickLumpItem' data-index='{{2}}'>
+            <image src="{{host+programme[2].image}}" style=" width: 100%; height:100%;" />
+          </view>
+          <!--横分隔线-->
+          <view style="float:left;box-sizing: border-box; line-height: 0; background-color: rgb(232, 232, 232); width: 2rpx; height: 100%;" />
+          <!--右-->
+          <view style="float:left;box-sizing: border-box; line-height: 0; width: 49%; height:100%;" bindtap='_clickLumpItem' data-index='{{3}}'>
+            <image src="{{host+programme[3].image}}" style=" width: 100%; height:100%;" />
+          </view>
+        </view>
+      </view>
+    </view>
+    <view style="box-sizing: border-box; line-height: 0; background-color: rgb(232, 232, 232); width: 2rpx; height: 100%;" />
+  </view>
+</template>

@@ -1,0 +1,12 @@
+  <!--主图轮播-->
+<template name="mainImage">
+  <view>
+    <swiper indicator-dots="true" indicator-active-color="#d4237a" autoplay="true" style="height:{{pagewidth}}px">
+      <block wx:for="{{mainImages}}" wx:key="{{index}}">
+        <swiper-item>
+          <image src="{{item}}" style="width:100%;height:100%" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</template>

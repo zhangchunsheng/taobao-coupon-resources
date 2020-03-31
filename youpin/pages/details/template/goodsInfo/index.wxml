@@ -1,0 +1,34 @@
+<import src="/dist/capsule/index.wxml" />
+<template name="goodsInfo">
+  <!--标题-->
+  <!--{{shopType：‘’title:'',discountPrice:'',priceText:'',flpoints:'',sellCount:''}}-->
+  <view class="box">
+    <view class="box-ptop">
+      <image src="/images/{{shopType=='C'?'tb':'tm'}}.png" class="title-img" />
+      <text class="title-text">{{title}}</text>
+    </view>
+    <!--价格信息-->
+    <view class="box-ptop priceinfo-box">
+      <view style='float: left;'>
+        <image src="/images/qhj.png" class="yhq-img" />
+      </view>
+      <view class="qhj-text">
+        <text>¥</text>
+        <text style='margin-left:6rpx;font-size:44rpx;'>{{discountPrice}}</text>
+      </view>
+
+      <view class="yj-text">
+        <text style='font-size:24rpx;'>原价 ¥</text>
+        <text style='margin-left:4rpx;text-decoration:line-through'>{{priceText}}</text>
+      </view>
+
+      <view style='float:left;margin-left:10rpx;'>
+        <template is="capsule" data="{{ leftText: '约返', rightText: flpoints+'积分', color: '#ff833c' }}" />
+      </view>
+      <view class="sale-num">
+        <text>月销{{sellCount}}笔</text>
+      </view>
+    </view>
+  </view>
+
+</template>

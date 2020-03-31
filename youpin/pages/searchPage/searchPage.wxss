@@ -1,0 +1,30 @@
+@import "/template/search/search.wxss";
+
+.box {
+  background-color: #fff;
+}
+
+.tag-title-box {
+  width: 100%;
+  display: flex;
+}
+
+.tag-title-item {
+  flex: 1;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+
+.tag-item {
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+  font-size: 22rpx;
+  padding:0 15rpx;
+  margin-left: 0;
+  border: 1.5rpx solid #e6e6e6;
+  height: 45rpx;
+  line-height: 45rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  display: inline-block;
+}

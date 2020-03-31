@@ -1,0 +1,25 @@
+<import src="/template/goodsBox/index.wxml" />
+<import src="/template/toTop/toTop.wxml" />
+<view class="page" style='background-color:#ffabdd;'>
+  <scroll-view scroll-y scroll-with-animation bindscroll="scrollEvent" style="height:{{ui.pageHeight}}px;" scroll-top='{{ui.scrollPosition}} lower-threshold=100'>
+    <view>
+      <image src="/images/top.jpg" mode="widthFix" style='width:100%;' />
+    </view>
+    <view style='padding-left:20rpx;padding-right:20rpx;'>
+      <view style="margin-bottom: 40rpx;">
+        <scroll-view scroll-x class='tab-box'>
+          <view wx:for='{{category}}' wx:key='{{index}}' data-index='{{index}}' class='tab-item {{ui.currentTabIndex==index?"tab-active":""}}' bindtap='clickTabItem'>
+            <view style='margin-top:-20rpx;'>
+              <image src='{{item.image}}' style='width:80rpx;height:100rpx;' />
+            </view>
+            <view style='font-size:24rpx;'>
+              <text>{{item.title}}</text>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+      <template is="goodsBox" data="{{type:1,bgcolor:'#ffabdd',pageList:goodsList,pvid:'',topThreeIsShow:true}}" />
+    </view>
+  </scroll-view>
+  <template is='toTop' data="{{isHidden:ui.toTopBtnIsHidden}}" />
+</view>

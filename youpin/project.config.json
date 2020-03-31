@@ -1,0 +1,16 @@
+{
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"appid": "wx9320888d2e6c4243",
+	"projectname": "IGF.youpin",
+	"compileType": "miniprogram",
+	"libVersion": "2.0.8",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {}
+}

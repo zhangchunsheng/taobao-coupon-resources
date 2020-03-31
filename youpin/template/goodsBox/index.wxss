@@ -1,0 +1,4 @@
+@import '/template/goodsItem/index.wxss';
+.goodsbox{
+    width: 100%;
+}

@@ -1,0 +1,53 @@
+.grid-box {
+  border-top: 2rpx solid #eee;
+  margin-left: 2rpx;
+}
+
+.grid-item {
+  box-sizing: border-box;
+  margin-bottom: 0;
+  padding-bottom: 32%;
+  border-right: 2rpx solid #eee;
+  border-bottom: 2rpx solid #eee;
+  width: 25%;
+  height: 0;
+  list-style: none;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+
+.grid-image {
+  width: 70%;
+  height: 0;
+  padding-bottom: 100%;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-text {
+  position: absolute;
+  left: 0;
+  bottom: 2rpx;
+  width: 100%;
+  font-size: 24rpx;
+  color: #666;
+  text-align: center;
+  font-weight: normal;
+  line-height: 2;
+  background: rgba(255, 255, 255, 0.8);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+button {
+  padding-left: 0;
+  padding-right: 0;
+  line-height:0;
+  position: static;
+}
+
+button[plain] {
+  border: 0;
+}

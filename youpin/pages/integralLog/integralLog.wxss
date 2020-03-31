@@ -1,0 +1,17 @@
+.list-item {
+  height: 100%;
+  border-bottom: 1rpx solid #ccc;
+  padding: 10rpx 30rpx;
+  display: flex;
+}
+.list-title{
+  font-size:28rpx;
+}
+.list-date{
+  font-size:20rpx;
+  color:#676767;
+}
+.list-point{
+  color:#5cb8bc;
+  text-align: right;
+}

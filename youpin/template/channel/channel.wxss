@@ -1,0 +1,27 @@
+
+.channel {
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  height: 120rpx;
+  width: 100%;
+  background-color: #fff;
+}
+
+.image-title {
+  text-align: center;
+}
+
+.section__title {
+  font-size: 24rpx;
+  color: #666;
+}
+
+.section__image {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.section__ctn {
+  float: left;
+  width: 20%;
+}

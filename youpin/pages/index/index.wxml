@@ -1,0 +1,31 @@
+<import src="/template/search/search.wxml" />
+<import src="/template/swiper/swiper.wxml" />
+<import src="/template/channel/channel.wxml" />
+<import src="/template/lumpshow/lumpshow.wxml" />
+<import src="/template/goodsBox/index.wxml" />
+<import src="/dist/noticebar/index.wxml" />
+<view class='page'>
+  <!--搜索栏-->
+  <view bindtap='clickSearchBar'>
+    <template is="search" data="{{color:'#ff93a5'}}" />
+  </view>
+
+  <!--轮播图-->
+  <template is="swiper" data="{{swiper,host:host}}" />
+
+  <!--频道栏-->
+  <template is="channel" data="{{channel:channel,host:host}}" />
+  <view style='margin-top:10rpx;' hidden="{{notice.hidden}}">
+    <template is="zan-noticebar" data="{{ ...notice, componentId: 'notice'  }}"></template>
+  </view>
+  <!--块状展示-->
+  <template is="lumpshow" data="{{programme,host:host,timeData}}" />
+  <!--精品推荐-->
+  <view class="container" style='background-color: #fff;'>
+    <view class="head-title">
+      <text>· 精品推荐 ·</text>
+    </view>
+    <template is="goodsBox" data="{{type:0,bgcolor:'#fff',pageList:goodsList,pvid:''}}" />
+  </view>
+
+</view>

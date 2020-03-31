@@ -1,0 +1,13 @@
+<view class='body'>
+  <view class='top-text'>
+    <text>{{topTitle}}</text>
+  </view>
+  <view class='body-item' wx:for="{{bodyData}}" wx:key="{{index}}">
+    <view class='body-title'>
+      <text>{{item.title}}</text>
+    </view>
+    <view class='body-text'>
+      <text>{{item.text}}</text>
+    </view>
+  </view>
+</view>

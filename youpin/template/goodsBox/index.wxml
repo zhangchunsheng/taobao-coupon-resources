@@ -1,0 +1,12 @@
+<import src="/template/goodsItem/index.wxml" />
+<template name="goodsBox">
+  <view class="goodsbox" style='background-color:{{bgcolor}}'>
+    <block wx:for="{{pageList}}" wx:key="index">
+      <template is="goodsItem{{type}}" data="{{pictUrl:item.pictUrl,couponAmount:item.couponAmount,title:item.title,biz30day:item.biz30day,zkPrice:item.zkPrice,salePrice:item.salePrice,itemid:item.auctionId,pvid:pvid,couponAmount:item.couponAmount,tkCommFee:item.tkCommFee,bgcolor:bgcolor,index:index,topThreeIsShow:topThreeIsShow,enabled:enabled}}"
+      />
+    </block>
+  </view>
+  <view class="zan-loadmore zan-loadmore--nodata" style='margin-top:40rpx;' wx:if='{{pageList.length==0}}'>
+    <view class="zan-loadmore__tips" style='background:#fff'>暂无数据</view>
+  </view>
+</template>

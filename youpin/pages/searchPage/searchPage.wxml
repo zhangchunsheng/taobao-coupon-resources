@@ -1,0 +1,48 @@
+<import src="/template/search/search.wxml" />
+<view class='page'>
+  <view style='width:100%;background-color:#fff;display:flex;'>
+    <view style='flex:8'>
+      <template is="search" data="{{color:'#fff',searchText:searchText}}" />
+    </view>
+    <view style='flex:2;padding-top:20rpx;padding-bottom:20rpx;'>
+      <view style="margin-right:40rpx;">
+        <view class="btn" bindtap='search'>搜索</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='box'>
+    <view>
+      <view class='tag-title-box'>
+        <view class='tag-title-item'>
+          <icon class='fa fa-signal' style='margin-top:-8rpx;color:#ff93a5' />
+          <text style='margin-left:10rpx;'>大家都在搜</text>
+        </view>
+        <view class='tag-title-item' style='display:flex;justify-content:flex-end;'>
+          <!-- <icon class='fa fa-refresh' style='margin-top:-6rpx;' /> -->
+        </view>
+      </view>
+      <view>
+        <view class='tag-item' wx:for='{{hotTagList}}' wx:key='{{inex}}' bindtap='hotSearch' data-index='{{index}}'>
+          {{item}}
+        </view>
+      </view>
+    </view>
+    <view style='margin-top:20rpx;'>
+      <view class='tag-title-box'>
+        <view class='tag-title-item'>
+          <icon class='fa fa-history' style='margin-top:-8rpx;color:#ff93a5' />
+          <text style='margin-left:10rpx;'>搜索历史</text>
+        </view>
+        <view class='tag-title-item' style='display:flex;justify-content:flex-end;' bindtap='removeHistoryKeyword'>
+          <icon class='fa fa-trash-o' style='margin-top:-6rpx;' />
+        </view>
+      </view>
+      <view>
+        <view class='tag-item' wx:for='{{historyTagList}}' wx:key='{{inex}}' bindtap='historySearch' data-index='{{index}}'>
+          {{item}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

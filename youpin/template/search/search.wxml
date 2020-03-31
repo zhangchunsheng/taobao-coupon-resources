@@ -1,0 +1,10 @@
+<template name="search">
+  <view class='search-box' style='background-color:{{color}}'>
+    <view class="weui-search-bar__form search-input-styles1">
+      <view class="weui-search-bar__box">
+        <icon class="weui-icon-search_in-box " type="search" size="14"></icon>
+        <input type="text" class="weui-search-bar__input" placeholder="请输入关键词或粘贴淘宝天猫商品标题" value="{{searchText}}" bindinput="_searchInputEvent" confirm-type="search"/>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,30 @@
+<import src="/template/grid/index.wxml" />
+<view class="head-box">
+  <view style='padding-top:15rpx;'>
+    <view style='width:120rpx;height:120rpx;margin: 0 auto;'>
+      <image src="{{userInfo.avatarUrl==null?'/images/user-unlogin.png':userInfo.avatarUrl}}" style='width:100%;height:100%;border-radius:50%;' />
+    </view>
+    <view style='color:#fff;font-size:30rpx;margin-top:10rpx;text-align:center;'>
+      <text>{{userInfo.nickName}}</text>
+      <text style='color:#f4ea2a'>{{userInfo.level==1?'【普通会员】':''}}{{userInfo.level==2?'【高级会员】':''}}{{userInfo.level==3?'【超级会员】':''}}</text>
+
+    </view>
+  </view>
+</view>
+<view class="page" wx:if="{{!ui.toolBarHidden}}">
+  <view style='display:flex;background-color:#fff;padding:20rpx 0;'>
+    <view style='flex:1;text-align:center;border-right: 2rpx #eeeeee solid;'>
+      <icon class="point" style='background-size: 40rpx 40rpx;height: 40rpx;width: 40rpx;'></icon>
+      <text style='font-weight:bold;'>{{userInfo.integral}}</text>
+    </view>
+    <view style='flex:1;display:flex;align-items:center;'>
+      <view class="sign-in-btn {{ui.isSignIn?'signed':''}}" style='margin:0 auto;' bindtap='signIn'>{{ui.signInTitle}}</view>
+    </view>
+  </view>
+  <view style="background-color:#fff;margin-top:10rpx;">
+    <view style='padding:10rpx;'>
+      <text>我的工具</text>
+    </view>
+    <template is="grid1" data="{{gridData:category}}" />
+  </view>
+</view>

@@ -1,0 +1,41 @@
+<!--{{btnShow:,discountPrice:,priceText:}}-->
+<template name="bottomBar">
+  <view class="bottom_bar" hidden='{{!btnShow}}'>
+    <view class="bottom-left">
+      <view class="icon-box">
+        <view class="icon-item" bindtap="_clickHome">
+          <view class='icon-image'>
+            <image src='/images/home.png' mode='widthFix' style='width: 36rpx;margin-top:14rpx;' />
+          </view>
+          <view class='icon-text'>
+            <text>首页</text>
+          </view>
+        </view>
+        <view class="icon-item">
+          <button open-type='share' hover-class="none" plain="true">
+            <view class='icon-image'>
+              <image src='/images/share.png' mode='widthFix' style='width: 36rpx;margin-top:14rpx;' />
+            </view>
+            <view class='icon-text'>
+              <text>分享</text>
+            </view>
+          </button>
+        </view>
+        <view class="icon-item" bindtap="_clickFav">
+          <view class='icon-image'>
+            <image src='{{isFav?"/images/fav_selected.png":"/images/fav_default.png"}}' mode='widthFix' style='width: 36rpx;margin-top:14rpx;' />
+          </view>
+          <view class='icon-text'>
+            <text>收藏</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="bottom-right point-btn" bindtap="_clickPoint">
+      积分购买
+    </view>
+    <view class="bottom-right coupon-btn" bindtap="_clickCoupon">
+      领券购买
+    </view>
+  </view>
+</template>

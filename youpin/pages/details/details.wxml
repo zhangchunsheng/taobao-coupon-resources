@@ -1,0 +1,23 @@
+<import src="/pages/details/template/mainImage/index.wxml" />
+<import src="/pages/details/template/bottomBar/index.wxml" />
+<import src="/pages/details/template/coupon/index.wxml" />
+<import src="/pages/details/template/detailImage/index.wxml" />
+<import src="/pages/details/template/goodsInfo/index.wxml" />
+<import src="/pages/details/template/shopInfo/index.wxml" />
+<import src="/pages/details/template/subtitle/index.wxml" />
+<scroll-view class="page" scroll-y bindscroll="couponScroll" style="height:{{ui.pageHeight}}px;" hidden='{{!ui.pageShow}}'>
+  <!--主图轮播-->
+  <template is="mainImage" data='{{pagewidth:ui.pagewidth,mainImages:goods.mainImages}}' />
+  <!--宝贝信息-->
+  <template is="goodsInfo" data='{{shopType:goods.seller.shopType,title:goods.title,discountPrice:goods.salePrice,priceText:goods.priceText,flpoints:goods.flpoints,sellCount:goods.sellCount}}' />
+  <!--立即领券-->
+  <template is="coupon" data='{{couponPrice:goods.couponPrice}}' wx-if="{{!ui.couponButton.hidden}}"/>
+  <!--店铺信息-->
+  <template is="shopInfo" data='{{shopIcon:goods.seller.shopIcon,shopType:goods.seller.shopType,shopName:goods.seller.shopName,evaluates:goods.seller.evaluates}}' />
+  <!--卖点-->
+  <block wx:if="{{goods.subtitle!=''}}">
+    <template is="subtitle" data='{{subtitle:goods.subtitle}}' />
+  </block>
+  <template is="detailImage" data='{{currentTabIndex:ui.currentTabIndex,descImages:goods.descImages,groupProps:goods.groupProps}}' />
+  <template is="bottomBar" data='{{btnShow:ui.btnShow,isFav:ui.isFav}}' wx-if="{{!ui.couponButton.hidden}}"/>
+</scroll-view>

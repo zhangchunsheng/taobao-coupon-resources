@@ -1,0 +1,14 @@
+.time-box{
+  width: 32rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+  background-color: #000;
+  border-radius:6rpx;
+  color: #fff;
+  font-size:22rpx;
+  text-align:center;
+}
+.padding{
+  padding-left: 2rpx;
+  padding-right: 2rpx;
+}

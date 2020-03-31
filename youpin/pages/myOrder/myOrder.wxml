@@ -1,0 +1,19 @@
+<import src="/pages/myOrder/template/orderItem/orderItem.wxml" />
+<navbar tabs='{{tabs.data}}' color='{{tabs.color}}' bind:tabchange-event="tabChange">
+  <view slot="0">
+    <!--  <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">获取用户信息</button> -->
+    <template is="orderItem" data='{{orders}}' />
+  </view>
+  <view slot="1">
+    <template is="orderItem" data='{{orders}}' />
+  </view>
+  <view slot="2">
+    <template is="orderItem" data='{{orders}}' />
+  </view>
+  <view slot="3">
+    <template is="orderItem" data='{{orders}}' />
+  </view>
+  <view slot="4">
+    <template is="orderItem" data='{{orders}}' />
+  </view>
+</navbar>
