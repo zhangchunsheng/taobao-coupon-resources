@@ -1,9 +1,54 @@
-#.idea/
+### gradle ###
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
 
-target/
+### STS ###
+.settings/
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+bin/
 
+### IntelliJ IDEA ###
+/.idea/
+/private/
+/storage/
+/yopsaas.iml
+.checkstyle
+.idea
+*.iws
 *.iml
+*.ipr
+rebel.xml
+### maven ###
+target/
+*.war
+*.ear
+*.zip
+*.tar
+*.tar.gz
 
-*.bak
+### logs ####
+/logs/
+*.log
 
-tomcat/
+### temp ignore ###
+*.cache
+*.diff
+*.patch
+*.tmp
+*.java~
+*.properties~
+*.xml~
+
+### system ignore ###
+.DS_Store
+Thumbs.db
+Servers
+.metadata
+upload
+gen_code
