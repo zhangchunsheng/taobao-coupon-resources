@@ -21,7 +21,7 @@ bin/
 .checkstyle
 .idea
 *.iws
-*.iml
+#*.iml
 *.ipr
 rebel.xml
 ### maven ###
